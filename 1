@@ -1,0 +1,16 @@
+
+
+
+menu = ["pizza","loukoumades","dolmades","hamburger","tzaziki","paidakia"]
+fwnyenta = ["a","e","i","o","u"]
+
+for piato in menu:
+    print(piato)
+print ("Total number of items = %d" % len(menu))
+
+for x in fwnyenta:
+
+    print ("The letter %s appears %s times" %(x.upper(),sum(piato.count(x) for piato in menu)))
+
+for piato in menu:
+    print piato[::-1]
